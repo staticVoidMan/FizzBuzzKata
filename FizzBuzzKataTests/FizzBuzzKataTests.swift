@@ -11,20 +11,20 @@ import XCTest
 
 class FizzBuzzKataTests: XCTestCase {
     
+    lazy var fizzBuzz: FizzBuzz = {
+       return FizzBuzz()
+    }()
+    
     func testCanCreateFizzBuzzClass() {
-        let fizzBuzz = FizzBuzz()
         XCTAssertTrue(fizzBuzz != nil, "Missing FizzBuzz class")
     }
     
     func testCanAcceptNumberInput() {
-        let fizzBuzz = FizzBuzz()
         let string = fizzBuzz.takeInput(number: 0)
         XCTAssertEqual(string, "")
     }
     
     func testDoesNotPrintOnNumbersNotDivisibleByThree() {
-        let fizzBuzz = FizzBuzz()
-        
         var string = fizzBuzz.takeInput(number: -1)
         XCTAssertEqual(string, "")
         
@@ -45,7 +45,6 @@ class FizzBuzzKataTests: XCTestCase {
     }
     
     func testCanPrintFizzOnNumbersDivisibleByThree() {
-        let fizzBuzz = FizzBuzz()
         let string = fizzBuzz.takeInput(number: 3)
         XCTAssertEqual(string, "Fizz")
     }
