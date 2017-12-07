@@ -8,7 +8,7 @@
 
 class FizzBuzz {
     
-    func takeInput(_ number: Int) -> String {
+    func takeInput(number: Int) -> String {
         return ""
     }
 }
