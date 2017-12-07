@@ -16,4 +16,10 @@ class FizzBuzzKataTests: XCTestCase {
         XCTAssertTrue(fizzBuzz != nil, "Missing FizzBuzz class")
     }
     
+    func testCanAcceptInput() {
+        let fizzBuzz = FizzBuzz()
+        let string = fizzBuzz.takeInput(0)
+        XCTAssertEqual(string, "")
+    }
+    
 }
