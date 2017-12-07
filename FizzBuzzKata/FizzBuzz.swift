@@ -9,20 +9,21 @@
 class FizzBuzz {
     
     func takeInput(number: Int) -> String {
-        if number != 0 {
-            if (number % 3) == 0
-                && (number % 5) == 0 {
-                return "FizzBuzz"
-            }
-            else if (number % 3) == 0 {
-                return "Fizz"
-            }
-            else if (number % 5) == 0 {
-                return "Buzz"
-            }
+        var string = ""
+        
+        if number == 0 {
+            return string
         }
         
-        return ""
+        if (number % 3) == 0 {
+            string = "Fizz"
+        }
+        
+        if (number % 5) == 0 {
+            string = "\(string)Buzz"
+        }
+        
+        return string
     }
     
 }
