@@ -11,4 +11,9 @@ import XCTest
 
 class FizzBuzzKataTests: XCTestCase {
     
+    func testCanCreateFizzBuzzClass() {
+        let fizzBuzz = FizzBuzz()
+        XCTAssertTrue(fizzBuzz != nil, "Missing FizzBuzz class")
+    }
+    
 }
