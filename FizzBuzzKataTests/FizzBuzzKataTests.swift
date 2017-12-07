@@ -51,4 +51,9 @@ class FizzBuzzKataTests: XCTestCase {
         XCTAssertEqual(string, "Buzz")
     }
     
+    func testCanPrintFizzBuzzOnNumberDivisibleByThreeAndFive() {
+        let string = fizzBuzz.takeInput(number: 15)
+        XCTAssertEqual(string, "FizzBuzz")
+    }
+    
 }
