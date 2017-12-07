@@ -24,7 +24,7 @@ class FizzBuzzKataTests: XCTestCase {
         XCTAssertEqual(string, "")
     }
     
-    func testDoesNotPrintOnNumbersNotDivisibleByThree() {
+    func testDoesNotPrintOnNumbersNotDivisibleByThreeAndFive() {
         var string = fizzBuzz.takeInput(number: -1)
         XCTAssertEqual(string, "")
         

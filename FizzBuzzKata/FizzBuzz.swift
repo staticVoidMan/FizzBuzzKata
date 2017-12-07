@@ -9,14 +9,16 @@
 class FizzBuzz {
     
     func takeInput(number: Int) -> String {
-        if number != 0, (number % 3) == 0 {
-            return "Fizz"
+        if number != 0 {
+            if (number % 3) == 0 {
+                return "Fizz"
+            }
+            else if (number % 5) == 0 {
+                return "Buzz"
+            }
         }
-        else if number != 0, (number % 5) == 0 {
-            return "Buzz"
-        }
-        else {
-            return ""
-        }
+        
+        return ""
     }
+    
 }
