@@ -38,17 +38,26 @@ class FizzBuzzKataTests: XCTestCase {
     }
     
     func testCanPrintFizzOnNumbersDivisibleByThree() {
-        let string = fizzBuzz.takeInput(number: 3)
+        var string = fizzBuzz.takeInput(number: -3)
+        XCTAssertEqual(string, "Fizz")
+        
+        string = fizzBuzz.takeInput(number: 3)
         XCTAssertEqual(string, "Fizz")
     }
     
     func testCanPrintBuzzOnNumbersDivisibleByFive() {
-        let string = fizzBuzz.takeInput(number: 5)
+        var string = fizzBuzz.takeInput(number: -5)
+        XCTAssertEqual(string, "Buzz")
+        
+        string = fizzBuzz.takeInput(number: 5)
         XCTAssertEqual(string, "Buzz")
     }
     
     func testCanPrintFizzBuzzOnNumbersDivisibleByThreeAndFive() {
-        let string = fizzBuzz.takeInput(number: 15)
+        var string = fizzBuzz.takeInput(number: -15)
+        XCTAssertEqual(string, "FizzBuzz")
+        
+        string = fizzBuzz.takeInput(number: 15)
         XCTAssertEqual(string, "FizzBuzz")
     }
     
