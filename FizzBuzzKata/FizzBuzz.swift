@@ -8,6 +8,14 @@
 
 class FizzBuzz {
     
+    fileprivate func isDivisibleByThree(_ number: Int) -> Bool {
+        return (number % 3) == 0
+    }
+    
+    fileprivate func isDivisibleByFive(_ number: Int) -> Bool {
+        return (number % 5) == 0
+    }
+    
     func takeInput(number: Int) -> String {
         var string = ""
         
@@ -15,11 +23,11 @@ class FizzBuzz {
             return string
         }
         
-        if (number % 3) == 0 {
+        if isDivisibleByThree(number) {
             string = "Fizz"
         }
         
-        if (number % 5) == 0 {
+        if isDivisibleByFive(number) {
             string = "\(string)Buzz"
         }
         
