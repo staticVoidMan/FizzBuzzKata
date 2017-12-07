@@ -13,6 +13,8 @@
 		F2191E751FD91FC20035A21B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2191E741FD91FC20035A21B /* Assets.xcassets */; };
 		F2191E781FD91FC20035A21B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2191E761FD91FC20035A21B /* LaunchScreen.storyboard */; };
 		F2191E831FD91FC30035A21B /* FizzBuzzKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2191E821FD91FC30035A21B /* FizzBuzzKataTests.swift */; };
+		F2191E8E1FD921430035A21B /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2191E8D1FD921430035A21B /* FizzBuzz.swift */; };
+		F2191E8F1FD921430035A21B /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2191E8D1FD921430035A21B /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		F2191E7E1FD91FC20035A21B /* FizzBuzzKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2191E821FD91FC30035A21B /* FizzBuzzKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzKataTests.swift; sourceTree = "<group>"; };
 		F2191E841FD91FC30035A21B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2191E8D1FD921430035A21B /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				F2191E741FD91FC20035A21B /* Assets.xcassets */,
 				F2191E761FD91FC20035A21B /* LaunchScreen.storyboard */,
 				F2191E791FD91FC20035A21B /* Info.plist */,
+				F2191E8D1FD921430035A21B /* FizzBuzz.swift */,
 			);
 			path = FizzBuzzKata;
 			sourceTree = "<group>";
@@ -200,6 +204,7 @@
 			files = (
 				F2191E701FD91FC20035A21B /* ViewController.swift in Sources */,
 				F2191E6E1FD91FC20035A21B /* AppDelegate.swift in Sources */,
+				F2191E8E1FD921430035A21B /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2191E831FD91FC30035A21B /* FizzBuzzKataTests.swift in Sources */,
+				F2191E8F1FD921430035A21B /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
