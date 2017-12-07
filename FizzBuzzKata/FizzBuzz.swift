@@ -9,6 +9,11 @@
 class FizzBuzz {
     
     func takeInput(number: Int) -> String {
-        return ""
+        if number != 0, (number % 3) == 0 {
+            return "Fizz"
+        }
+        else {
+            return ""
+        }
     }
 }
