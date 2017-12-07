@@ -22,4 +22,10 @@ class FizzBuzzKataTests: XCTestCase {
         XCTAssertEqual(string, "")
     }
     
+    func testCanPrintFizzOnNumbersDivisibleByThree() {
+        let fizzBuzz = FizzBuzz()
+        let string = fizzBuzz.takeInput(number: 3)
+        XCTAssertEqual(string, "Fizz")
+    }
+    
 }
