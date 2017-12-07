@@ -39,9 +39,6 @@ class FizzBuzzKataTests: XCTestCase {
         
         string = fizzBuzz.takeInput(number: 4)
         XCTAssertEqual(string, "")
-        
-        string = fizzBuzz.takeInput(number: 5)
-        XCTAssertEqual(string, "")
     }
     
     func testCanPrintFizzOnNumbersDivisibleByThree() {
